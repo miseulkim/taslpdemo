@@ -71,15 +71,17 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
+
+      <img id="teaser"
+           src="./static/images/fig1.png"
+           alt="Teaser image"
+           style="width: 100%; height: auto;">
+
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        Multimodal Style Control in Voice Conversion
+        Using Textual and Acoustic Prompts
       </h2>
+
     </div>
   </div>
 </section>
@@ -100,7 +102,8 @@
             To integrate the multimodal cues, we train a flow matching decoder using a masked infilling based training objective, which learns to reconstruct acoustic features so as to match the desired target identity and style.
             Within the decoder, a cross-attention mechanism fuses acoustic features and semantic embeddings derived from natural language prompts, enabling the model to effectively utilize the information provided in the joint conditioning. 
             Experimental results demonstrate that the proposed method achieves high-fidelity zero-shot conversion, preserving the target speaker's identity while enabling text-driven voice editing with enhanced expressiveness and intelligibility.
-            Our demo page is publicly available online. <a href="https://miseulkim.github.io/taslpdemo"></a>.
+            Our demo page is publicly available online <a href="https://miseulkim.github.io/taslpdemo"
+            target="_blank" rel="noopener noreferrer"> here </a>.
           </p>
         </div>
       </div>

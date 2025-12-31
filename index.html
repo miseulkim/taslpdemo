@@ -97,27 +97,14 @@
             deforming scene using photos/videos captured casually from mobile phones.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Conventional voice conversion (VC) systems primarily rely on reference speech or pre-trained speaker embeddings to transfer speaking style. 
+            However, their ability to control fine-grained acoustic characteristics is limited, as they can only utilize attributes that are implicitly embedded in the reference speech.
+            In this paper, we propose a \textit{text- and speech-guided, style-controllable voice conversion framework} that enables intuitive and interpretable manipulation of speaking style through the integration of two modalities. 
+            The proposed framework employs a speech prompt to preserve speaker identity and a natural language text prompt to provide high-level stylistic guidance. 
+            To integrate the multimodal cues, we train a flow matching decoder using a masked infilling based training objective, which learns to reconstruct acoustic features so as to match the desired target identity and style.
+            Within the decoder, a cross-attention mechanism fuses acoustic features and semantic embeddings derived from natural language prompts, enabling the model to effectively utilize the information provided in the joint conditioning. 
+            Experimental results demonstrate that the proposed method achieves high-fidelity zero-shot conversion, preserving the target speaker's identity while enabling text-driven voice editing with enhanced expressiveness and intelligibility.
+            Our demo page is publicly available online.\footnote{\url{https://miseulkim.github.io/taslpdemo}}
           </p>
         </div>
       </div>
